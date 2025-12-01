@@ -66,6 +66,7 @@
             "AlgebraMath",
             "DailyFact",
             "Buddhist Counter",
+            "Reload Game",
             "Angle Math",
             "MP3 Player",
             
@@ -81,6 +82,7 @@
             "https://jacalastre123.github.io/algebraMath",
             "https://jacalastre123.github.io/dailyFact",
             "https://jacalastre123.github.io/buddhistCounter",
+            "https://jacalastre123.github.io/reloadGame",
             "https://jacalastre123.github.io/angleMath",
             "https://jacalastre123.github.io/mp3Player",
 
@@ -95,6 +97,7 @@
             "#2F9EE3",
             "#87E96E",
             "#3D9427",
+            "#4dd170",
             "#D9C333",
             "#F8EDAB",
             
@@ -109,9 +112,6 @@
             box.onclick = function() {
                 window.open(listLink[index], "_blank")
             }
-            let boxColourR = Math.floor(Math.random() * 156 + 100)
-            let boxColourG = Math.floor(Math.random() * 156 + 100)
-            let boxColourB = Math.floor(Math.random() * 156 + 100)
             box.style.backgroundColor = listColour[index]
             document.getElementById("container").appendChild(tempoClone)
         }) 
