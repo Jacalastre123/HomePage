@@ -12,13 +12,15 @@
     <style>
         body {
             font-family: Alan Sans;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
         }
 
         #box {
             padding: 8px;
-            width: 47vw;
+            width: 40vw;
             margin: 3.5px;
             overflow: clip;
             cursor: pointer;
@@ -59,6 +61,7 @@
     <script>
         const tempo = document.getElementById("tempo")
         const list = [
+            "HangmanAI",
             "Transistor Clicker",
             "Pericular Maths",
             "Memory Key",
@@ -77,6 +80,7 @@
         ]
 
         const listLink = [
+            "https://jacalastre123.github.io/HangmanAI",
             "https://jacalastre123.github.io/Transistor",
             "https://jacalastre123.github.io/pericular",
             "https://jacalastre123.github.io/memoryKey",
@@ -94,9 +98,10 @@
         ]
 
         const listColour = [
+            "rgb(90,150,220)", 
             "rgb(100,120,200)", 
             "#6AB3BB",
-            "#2677D8",
+            "grey",
             "#F65A5A",
             "#E79039",
             "#6DAEEA",
