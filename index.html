@@ -43,12 +43,15 @@
         * {
             box-sizing: border-box;
         }
-    
+
+        #counter {
+            font-weight: bold;
+        }
         </style>
 </head>
 <body>
     <h1>JacalPage</h1>
-    <h3>Enjoy some of my Cool Websites!</h3>
+    <h3>Enjoy my <span id="counter">0</span>Cool Websites!</h3>
     <div id="container">
     <template id="tempo">
         <div id="box" >
@@ -97,7 +100,7 @@
         ]
 
         const listLink = [
-            "https://jacalastre123.github.io/histoTab",
+            "https://jacalastre123.github.io/histoTablets",
             "https://jacalastre123.github.io/Changelog",
             "https://jacalastre123.github.io/WikiSearch",
             "https://jacalastre123.github.io/Gallix",
@@ -168,7 +171,7 @@
             
 
     ]
-
+        document.getElementById("counter").innerText = list.length
         list.forEach(function(item, index) {
             const tempoClone = tempo.content.cloneNode(true)
             const box = tempoClone.querySelector("#box")
